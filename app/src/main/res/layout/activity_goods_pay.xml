@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d0d7d1"
+    android:fitsSystemWindows="false"
+    tools:context="com.returnlive.app.GoodsPayActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="#fefcfc"
+        android:layout_marginTop="40px"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/ig_pay_back"
+                android:layout_width="160px"
+                android:layout_height="90px"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_back2"
+                android:gravity="center_vertical"
+                android:text="返回"
+                android:textColor="#FF8108"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="支付定金"
+                android:textColor="#FF8108"
+                android:textSize="35px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--货主信息  出发地  目的地-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/line_pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/lavenderblush"
+        android:orientation="vertical"
+        android:paddingBottom="30px">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_certfiction_icon"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:src="@mipmap/meinv2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:background="#FF8108"
+                android:gravity="center"
+                android:padding="2px"
+                android:text="已认证"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_pay_start"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_alignTop="@+id/img_certfiction_icon"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="5px"
+                android:layout_toRightOf="@+id/img_certfiction_icon"
+                android:gravity="center_vertical"
+                android:text="出发地"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/ig1"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_alignTop="@+id/tv_pay_start"
+                android:layout_marginLeft="15px"
+                android:layout_toRightOf="@+id/tv_pay_start"
+                android:src="@drawable/ic_bound_for" />
+
+            <TextView
+                android:id="@+id/tv_pay_end"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_alignTop="@+id/tv_pay_start"
+                android:layout_marginLeft="15px"
+                android:layout_toRightOf="@+id/ig1"
+                android:gravity="center_vertical"
+                android:text="目的地"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_pay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_pay_start"
+                android:layout_below="@+id/tv_pay_start"
+                android:layout_marginTop="25px"
+                android:text="货主：任怡君"
+                android:textColor="#333333"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--提示-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_marginLeft="30px"
+
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical"
+            android:text="提示：通过***支付定金，安全更有保障"
+            android:textColor="#ff0000"
+            android:textSize="37px"
+            android:textStyle="bold" />
+
+        <!--输入协商的金额-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_border3">
+
+            <TextView
+                android:id="@+id/tv_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="定金"
+                android:textColor="#333333"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/tv_input_money"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="10px"
+                android:layout_toRightOf="@+id/tv_p"
+                android:gravity="center_vertical"
+                android:hint="输入已协商的定金"
+                android:inputType="number"
+                android:digits="@string/about"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:background="@null"
+                android:textSize="48px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="元"
+                android:textColor="#333333"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--放空保障-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/line_pa2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_pa"
+        android:layout_marginTop="20px"
+        android:background="#ffffff"
+        android:paddingBottom="30px">
+
+        <ImageView
+            android:id="@+id/img_se"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/ic_fuwu_security" />
+
+        <TextView
+            android:id="@+id/tv_ppp"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignTop="@+id/img_se"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/img_se"
+            android:gravity="center_vertical"
+            android:text="放空保障"
+            android:textColor="#333333"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_security_money"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignTop="@+id/tv_ppp"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_ppp"
+            android:gravity="center_vertical"
+            android:text="￥100"
+            android:textColor="#ff0000"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_ppp"
+            android:layout_below="@+id/tv_ppp"
+            android:layout_marginTop="10px"
+            android:text="最高可保障50000元，查看详情>"
+            android:textSize="33px" />
+
+        <CheckBox
+            android:id="@+id/check_box_security"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_marginRight="10px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox_pay" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--余额抵扣-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_pa2"
+        android:paddingBottom="30px"
+        android:layout_marginTop="20px"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="30px"
+            android:text="余额抵扣"
+            android:textColor="#333333"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_pay_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="可用余额888.88元"
+            android:layout_below="@+id/tv_e"
+            android:layout_alignLeft="@+id/tv_e"
+            android:textColor="#f16303"
+            android:textSize="35px" />
+
+        <CheckBox
+            android:id="@+id/check_box_balance"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:button="@drawable/checkbox_pay" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--仍需支付-->
+    <TextView
+        android:id="@+id/tv_pay_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:text="仍需支付(￥88.88)"
+        android:background="#d6c8bf"
+        android:gravity="center"
+        android:textSize="42px"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whbackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--toolbar标题-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/goods_car_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:background="@color/lemonchiffon"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toobar_goods_car_title_address"
+                android:layout_width="150px"
+                android:layout_height="70px"
+                android:background="@drawable/sel_goods_title"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="2dp"
+                android:text="地址"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:textStyle="bold"
+                android:translationX="2dp" />
+
+            <TextView
+                android:id="@+id/toobar_goods_car_title_nearby"
+                android:layout_width="150px"
+                android:layout_height="70px"
+                android:background="@drawable/sel_goods_title"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="附近"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--出发点和目的地布局-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--出发地-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/ly_goods_car_start"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_car_start_email"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_goods_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/img_goods_icon"
+                android:gravity="center"
+                android:text="出发地"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3px"
+                android:layout_toRightOf="@id/tv_goods_car_start_email"
+                android:src="@drawable/ic_goods_down" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--目的地-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/ly_goods_car_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_car_end_email"
+                android:layout_width="150px"
+                android:layout_height="80px"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="目的地"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3px"
+                android:layout_toRightOf="@id/tv_goods_car_end_email"
+                android:src="@drawable/ic_goods_down" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--车长布局-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/ly_goods_car_cartime"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_car_car_time"
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="装车时间"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3px"
+                android:layout_toRightOf="@id/tv_goods_car_car_time"
+                android:src="@drawable/ic_goods_down" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--更多布局-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout_goods_car_more"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_weight="1.15"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_car_more"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_goods_icon"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_goods_icon"
+                android:gravity="center"
+                android:text="更多"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_goods_car_more"
+                android:src="@drawable/ic_goods_down" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--分界线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D4D4D4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView_goods_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</com.zhy.autolayout.AutoLinearLayout>

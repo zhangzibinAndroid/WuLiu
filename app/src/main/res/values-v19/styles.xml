@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--右滑时  状态栏和页面一起带动滑动   必须在styles 19 版本下-->
+    <style name="AppTheme.ColorStatusSwipe">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+</resources>

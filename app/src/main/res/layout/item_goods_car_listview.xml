@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear_item_goods_car">
+
+    <!--上面的头像部分-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="15px"
+        android:layout_marginTop="10px">
+        <!--引用自定义RoundImageView类包名   实现圆形图框-->
+        <com.returnlive.app.view.RoundImageView
+            android:id="@+id/img_goods_car_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@mipmap/shuaige"
+            android:layout_centerVertical="true" />
+
+        <TextView android:id="@+id/tv_goods_car_release_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_goods_car_icon"
+            android:layout_alignTop="@+id/img_goods_car_icon"
+            android:textSize="28px"
+            android:layout_marginTop="25px"
+            android:layout_marginLeft="20px"
+            android:text="发布时间：2017-12-10"
+            android:gravity="center_vertical" />
+
+        <TextView android:id="@+id/tv_goods_car_send_number"
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goods_car_release_time"
+            android:layout_alignLeft="@+id/tv_goods_car_release_time"
+            android:textSize="28px"
+            android:text="发车：33333单"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical" />
+
+        <TextView android:id="@+id/tv_deal_car_number"
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_goods_car_send_number"
+            android:layout_alignTop="@+id/tv_goods_car_send_number"
+            android:textSize="28px"
+            android:text="交易：33333单"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/img_goods_car_callphone"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:src="@mipmap/ic_goods_phone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="8px"/>
+
+        <!--分割线-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D4D4D4"
+            android:layout_below="@+id/img_goods_car_callphone"
+            android:layout_alignLeft="@+id/tv_goods_car_send_number"
+            android:layout_marginTop="18px"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <!-- 货主姓名 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+<!--android:ellipsize="end":省略号的位置
+ android:singleLine="true"：显示一行-->
+        <TextView
+            android:id="@+id/tv_goods_car_name"
+            android:layout_width="155px"
+            android:layout_height="wrap_content"
+            android:text="货主版--任怡君不好对付"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <!--下面的地址部分-->
+
+        <!--运货的起始位置-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装"
+                android:padding="10px"
+                android:textColor="#fff"
+                android:src="@mipmap/ic_car_goods_start"
+                android:layout_marginLeft="5px"/>
+
+            <TextView
+                android:id="@+id/tv_goods_car_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="南京市雨花台区"
+                android:textColor="#000"
+                android:textSize="30px"
+                android:layout_marginLeft="12px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+<!--运货的终点位置-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="装"
+            android:padding="10px"
+            android:src="@mipmap/ic_car_goods_end"
+            android:textColor="#fff"
+            android:layout_marginLeft="160px"/>
+
+        <TextView
+            android:id="@+id/tv_goods_car_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="宿州市埇桥区"
+            android:textColor="#000"
+            android:textSize="30px"
+            android:layout_marginLeft="12px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <!--备注说明-->
+           <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:paddingTop="8px"
+            android:paddingBottom="8px"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/ic_goods_remark"
+                android:layout_marginLeft="160px"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_goods_car_remark"
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:text="备注说明"
+                android:gravity="left"
+                android:textSize="22px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="13px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!--货车的类型和车长-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:paddingTop="8px"
+            android:paddingBottom="8px"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@drawable/ic_goods_cartype"
+                android:layout_marginLeft="30px"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_goods_car_cartype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货车的类型"
+                android:gravity="left"
+                android:textSize="22px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="13px"/>
+            <TextView
+                android:id="@+id/tv_goods_carlength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10米"
+                android:textSize="22px"
+                android:gravity="left"
+                android:layout_marginLeft="23px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <!--货物的重量-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:paddingTop="8px"
+            android:paddingBottom="22px"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@drawable/ic_goods_weight"
+                android:layout_marginLeft="160px"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_goods_car_weight"
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:text="333.3吨/100方"
+                android:gravity="left"
+                android:textSize="22px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="13px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!--货车的类型和车长-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:paddingTop="8px"
+            android:paddingBottom="22px">
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/ic_goods_traveltime"
+                android:layout_marginLeft="30px"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/tv_goods_car_traveltime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-12-20 \t 全天可装货"
+                android:gravity="left"
+                android:textSize="22px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="13px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

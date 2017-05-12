@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <!--添加订阅路线-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="2px">
+
+        <TextView
+            android:id="@+id/tv_unmber_total"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="@color/lemonchiffon"
+            android:drawableLeft="@drawable/ic_route_add2"
+            android:gravity="center_vertical"
+            android:paddingLeft="12px"
+            android:text="订阅路线(888)"
+            android:textSize="28px"
+            android:textColor="#666666"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rout_onwer_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/tv_rout_onwer_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2px"
+            android:background="@drawable/sel_route_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_centerHorizontal="true"
+
+                android:drawableLeft="@mipmap/ic_action_add"
+                android:gravity="center"
+                android:text="添加路线"
+                android:textSize="28px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

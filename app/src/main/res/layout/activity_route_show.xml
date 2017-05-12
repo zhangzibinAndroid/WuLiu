@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_route"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.returnlive.app.RouteShowActivity">
+
+<!-- 刚进页面先不获取editText焦点：android:focusable="true"
+    android:focusableInTouchMode="true"-->
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/route_show_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="40px"
+        android:background="#16BB91"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/ig_back"
+            android:layout_width="160px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/tv_toobar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="增加订阅路线"
+            android:textColor="#ffffff"
+            android:textSize="35px"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280px">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/ic_position_start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginLeft="20px"
+                android:layout_toEndOf="@+id/imageView"
+                android:gravity="center_vertical"
+                android:text="出发地"
+                android:textSize="35px"
+                android:textStyle="bold" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <Button
+            android:id="@+id/edt_route_start"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_border2"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_pop_windows"
+            android:paddingRight="10px"
+            android:hint="请输入出发城市"
+
+            android:paddingLeft="10px"
+            android:textSize="32px" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginLeft="20px"
+                android:layout_toEndOf="@+id/imageView2"
+                android:gravity="center_vertical"
+                android:text="目的地"
+                android:textSize="35px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/ic_position_end" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <Button
+            android:id="@+id/edt_route_end"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_border2"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_pop_windows"
+            android:paddingRight="10px"
+            android:hint="请输入到达城市"
+            android:paddingLeft="10px"
+            android:textSize="32px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_route_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="20px"
+            android:layout_weight="1"
+            android:background="#a5a997"
+            android:text="清空"
+            android:textSize="35px" />
+
+        <Button
+            android:id="@+id/btn_route_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="50px"
+            android:layout_weight="1"
+            android:background="#9ec796"
+            android:text="完成"
+            android:textSize="35px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

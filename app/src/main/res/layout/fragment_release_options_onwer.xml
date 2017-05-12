@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/cfd"
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/cf" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center_vertical"
+            android:text="出发地"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_starttt"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@+id/cb_cfd"
+            android:layout_toRightOf="@+id/textView6"
+            android:gravity="center_vertical"
+            android:hint="请输入出发地"
+            android:textColor="#444444"
+            android:paddingLeft="20px"
+            android:textSize="32px" />
+
+        <CheckBox
+            android:id="@+id/cb_cfd"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:button="@drawable/checkbox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:text="需要取货"
+            android:textColor="#00A84B" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/md" />
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="到达地"
+            android:textSize="35px" />
+
+
+        <TextView
+            android:id="@+id/tv_mudiii"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_marginLeft="20px"
+            android:layout_toLeftOf="@+id/cb_mdd"
+            android:layout_marginRight="15px"
+            android:hint="请输入目的地"
+            android:textColor="#444444"
+            android:paddingLeft="20px"
+            android:textSize="32px" />
+
+        <CheckBox
+            android:id="@+id/cb_mdd"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="10px"
+            android:button="@drawable/checkbox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:text="需要送货"
+            android:textColor="#00A84B" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30px"
+            android:layout_height="35px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/bt" />
+
+        <TextView
+            android:id="@+id/tv_leixin"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/imageView5"
+            android:text="货物类型"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_huowu"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_leixin"
+            android:hint="请选择货物类型"
+            android:layout_toLeftOf="@+id/iv_huo"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="20px"
+            android:paddingLeft="20px"
+            android:textColor="#444444"
+            android:textSize="35px" />
+
+        <ImageView
+            android:id="@+id/iv_huo"
+            android:layout_width="120px"
+            android:layout_height="65px"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/xl" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textViewname"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:text="货物名称"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_huowu"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+           android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewname"
+            android:background="@null"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:hint="请输入货物名称"
+            android:maxLength="10"
+            android:paddingLeft="20px"
+            android:textSize="35px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"></com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/bt" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginLeft="30px"
+            android:text="货物重量"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_cszl"
+            android:layout_width="400px"
+            android:layout_height="80px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="请输入货物重量"
+            android:paddingLeft="20px"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/et_cszl"
+            android:text="吨" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+           android:gravity="center_vertical"
+            android:text="货物体积"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_cytj"
+            android:layout_width="400px"
+            android:layout_height="80px"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入货物体积"
+            android:maxLength="10"
+            android:paddingLeft="20px"
+            android:textSize="35px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/et_cytj"
+            android:layout_centerVertical="true"
+            android:text="方" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"></com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textViewcar"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+           android:gravity="center_vertical"
+            android:text="车辆需求"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_car"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/textViewcar"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_car"
+            android:hint="请输入车辆需求"
+            android:paddingLeft="20px"
+            android:layout_marginRight="20px"
+            android:textColor="#444444"
+            android:textSize="35px" />
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="120px"
+            android:layout_height="65px"
+            android:layout_marginRight="20px"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xl" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textViewcartime"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:text="装车时间"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_zhuangchetime"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewcartime"
+            android:layout_toLeftOf="@+id/im_zhuangchetime"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="5px"
+            android:hint="请输入装车时间"
+            android:paddingLeft="20px"
+            android:textColor="#444444"
+            android:gravity="center_vertical"
+            android:textSize="35px" />
+
+        <ImageView
+            android:id="@+id/im_zhuangchetime"
+            android:layout_width="120px"
+            android:layout_height="65px"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/xl" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textViewmonkey"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:text="意向价格"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_carmonkey"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_toRightOf="@+id/textViewmonkey"
+            android:layout_marginLeft="20px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_d"
+            android:background="@null"
+            android:layout_marginRight="20px"
+            android:hint="请输入意向价格"
+            android:paddingLeft="20px"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:text="元/车" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/textViewshouhuo"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:text="收货电话"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_tele"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewshouhuo"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="请输入收货电话"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="20px"
+            android:layout_marginRight="80px"
+            android:textSize="35px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/tv_e"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:text="备注信息"
+            android:textSize="35px" />
+
+        <EditText
+            android:id="@+id/et_bzz"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_e"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="请输入备注信息"
+            android:maxLength="50"
+            android:layout_marginRight="30px"
+            android:paddingLeft="20px"
+            android:textSize="35px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:id="@+id/carboss"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100px"
+           android:gravity="center_vertical"
+            android:text="只允许实名车主联系我"
+            android:textSize="35px" />
+
+        <CheckBox
+            android:id="@+id/cb_carboss"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/carboss"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:gravity="center"
+            android:layout_marginLeft="80px"
+            android:src="@drawable/xl" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px"
+        android:background="#00A84B"
+        android:text="发布"
+        android:textColor="#fff"
+        android:textSize="40px" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50px">
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

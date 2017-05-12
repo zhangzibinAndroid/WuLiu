@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/release_options_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#16BB91" android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_toobar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布车源"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="35px"/>
+    </android.support.v7.widget.Toolbar>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#00A84B">
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/cfd"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="100px">
+
+        <ImageView
+            android:layout_marginLeft="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_position_start"
+            android:layout_width="40px"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/starts"
+            android:textSize="32px"
+            android:text="出发地"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView"
+            />
+        <EditText
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:layout_marginTop="13px"
+            android:textSize="30px"
+            android:hint="请输入出发地"
+            android:layout_marginLeft="240px"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:id="@+id/et_start" />
+
+        <ImageView
+            android:src="@mipmap/xl"
+            android:layout_width="55px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"
+            android:id="@+id/imgstart" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="1px">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:layout_marginLeft="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_position_end"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:id="@+id/imageView3" />
+
+        <EditText
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textSize="30px"
+            android:hint="请输入到达地"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240px"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:id="@+id/et_mudi" />
+
+        <TextView
+            android:textSize="32px"
+            android:text="到达地"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="25px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageView3"
+            android:id="@+id/textView7" />
+
+        <ImageView
+            android:src="@mipmap/xl"
+            android:layout_width="55px"
+            android:layout_marginRight="30px"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgend"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="40px">
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <EditText
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:layout_centerVertical="true"
+            android:textSize="30px"
+            android:hint="请输入车辆类型"
+            android:layout_marginLeft="240px"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:id="@+id/et_lx" />
+
+        <ImageView
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/bt"
+            android:layout_width="30px"
+            android:layout_height="50px"
+            android:id="@+id/imageView5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textSize="32px"
+            android:text="车辆类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25px"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageView5"
+            android:id="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/car"
+            android:src="@mipmap/xl"
+            android:layout_width="55px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="1px">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <TextView
+            android:textSize="32px"
+            android:text="承运重量"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView2" />
+        <EditText
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textSize="30px"
+            android:hint="请输入承受重量"
+            android:layout_marginLeft="240px"
+            android:layout_centerVertical="true"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:id="@+id/et_cszl" />
+
+        <TextView
+            android:layout_marginTop="10px"
+            android:text="吨"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_toEndOf="@+id/et_cszl"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignTop="@+id/textView2" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="1px">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+        <TextView
+            android:id="@+id/tv_centerr"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:textSize="32px"
+            android:text="承运体积"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textSize="30px"
+            android:hint="请输入承受体积"
+            android:layout_marginLeft="240px"
+            android:layout_centerVertical="true"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:id="@+id/et_cytj" />
+
+        <TextView
+            android:layout_marginTop="10px"
+            android:text="方"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_cytj"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignTop="@+id/textView3" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="1px">
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/fcfc"
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+
+        <EditText
+            android:focusable="true"
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textSize="30px"
+            android:hint="请选择时间"
+            android:layout_marginLeft="240px"
+            android:layout_width="380px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:id="@+id/et_fcsj" />
+
+        <TextView
+            android:textSize="32px"
+            android:text="发车时间"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="25px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@+id/imageView6"
+            android:id="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/Im_fc"
+            android:src="@mipmap/xl"
+            android:layout_width="55px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/bt"
+            android:layout_width="30px"
+            android:layout_height="50px"
+            android:id="@+id/imageView6"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#DBDBDB"
+        android:layout_width="fill_parent"
+        android:layout_height="1px">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100px">
+        <TextView
+            android:textSize="32px"
+            android:text="备注"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+        <EditText
+
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textSize="30px"
+            android:hint="请输入备注"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240px"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30px"
+            android:layout_height="80px"
+            android:id="@+id/et_bz" />
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:layout_marginTop="20px"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:background="#00A84B"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:id="@+id/btn_publish"
+        android:textSize="40px"
+        android:text="发布"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</com.zhy.autolayout.AutoLinearLayout>

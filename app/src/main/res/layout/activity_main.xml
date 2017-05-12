@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.returnlive.app.MainActivity">
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+    <!--分界线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D4D4D4"/>
+
+    <!--<me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout-->
+        <!--android:id="@+id/tab"-->
+        <!--app:elevation="8dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120px"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+    <!--最下面的控制板-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_main_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:drawableTop="@drawable/sel_main_goods"
+            android:text="货源"
+            android:gravity="center"
+            android:textColor="#561150"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/tv_main_route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:drawableTop="@drawable/sel_main_route"
+            android:text="路线"
+            android:gravity="center"
+            android:textColor="#561150"
+            android:layout_gravity="center"/>
+
+
+        <TextView android:id="@+id/tv_main_release_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:drawableTop="@drawable/sel_main_options"
+            android:text="发布车源"
+            android:gravity="center"
+            android:textColor="#561150"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/tv_main_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:drawableTop="@drawable/sel_main_me"
+            android:text="我的"
+            android:gravity="center"
+            android:textColor="#561150"
+            android:layout_gravity="center"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

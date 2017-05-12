@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5FFFA">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_item_rout"
+        android:layout_toLeftOf="@+id/tv_rout_list_number"
+        android:layout_marginRight="10px">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_location"
+        android:layout_marginLeft="6px"/>
+
+    <TextView
+        android:id="@+id/tv_rout_list_start"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_marginLeft="8px"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/img1"
+        android:text="出发地"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/imgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_rout_list_start"
+        android:src="@drawable/ic_route_arrive"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_rout_list_end"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_toRightOf="@+id/imgu"
+        android:gravity="center"
+        android:text="目的地"
+        android:textSize="28px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_rout_list_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15px"
+        android:text="线路货源  20单"
+        android:textColor="#e32"
+        android:textSize="22px"
+        android:textStyle="bold" />
+
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/linear_item_rout"
+        android:background="#D09D4D" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

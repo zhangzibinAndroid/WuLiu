@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rb_tracking_goods_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:paddingBottom="20px">
+
+        <RadioButton
+            android:id="@+id/rb_ordinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:checked="true"
+            android:text="普通货物" />
+
+
+        <RadioButton
+            android:id="@+id/rb_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:checked="false"
+            android:layout_marginTop="15px"
+            android:text="特殊货物" />
+
+        <RadioButton
+            android:id="@+id/rb_dangerous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:checked="false"
+            android:layout_marginTop="15px"
+            android:text="危险货物" />
+    </RadioGroup>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#DBDBDB"></View>
+
+</com.zhy.autolayout.AutoLinearLayout>
